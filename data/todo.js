@@ -5,7 +5,8 @@ const todos = [
 module.exports = {
     getAll,
     create,
-    deleteOne
+    deleteOne,
+    reset
 };
 
 function getAll() {
@@ -18,4 +19,8 @@ function create(todo) {
 
 function deleteOne(id) {
     todos.splice(id, 1);
+}
+
+function reset() {
+    
 }

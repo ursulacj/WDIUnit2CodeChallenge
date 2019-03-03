@@ -9,11 +9,12 @@
   <body>
     <h1>To Do List</h1>
 
-    <%todos.forEach(function(t, idx) { %>
-      
-      <!-- Display unordered list of all open todos -->
-      <div class="listWrapper">
-      <% if(t.todo !== "") { %>
+    
+    <!-- If list is NOT empty, display unordered list of all open todos -->
+    <div class="listWrapper">
+      <% console.log(todos) %>
+      <% if(todos.length >= 1) { %>
+        <%todos.forEach(function(t, idx) { %>
         <ul>
           <li> <%= t.todo %>
             -
@@ -23,12 +24,12 @@
               </form>
             </li>
           </ul>
+          <% }); %>
         </div>
-          <!-- Else if todos array is empty display a message that lets the user know -->
+          <!-- Else display a message that lets the user know -->
           <% } else { %>
             <h3>There are no To Dos yet!</h3>
           <% } %>
-      <% }); %>
       <br>
 
     <form action="/" method="POST" class="form">
