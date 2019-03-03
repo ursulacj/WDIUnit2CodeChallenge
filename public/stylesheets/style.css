@@ -1,0 +1,58 @@
+body {
+  padding: 50px;
+  font-family: 'Permanent Marker', monospace;
+}
+
+a {
+  color: #00B7FF;
+}
+
+form.form {
+  display: inline-flex;
+  border: none;
+}
+
+.listWrapper {
+  border-bottom: 2px solid gray;
+}
+
+button.delete {
+  background-color: rgba(23,23,23, 0);
+  border: none;
+  outline: none;
+  margin-left: 25px;
+}
+
+button.delete:hover {
+  color: red;
+}
+
+.add {
+  margin-top: 30px;
+  font-family: 'Permanent Marker', monospace;
+  height: 36px;
+}
+
+input.add {
+  width: 400px;
+  height: 30px;
+  font-size: 28px;
+  outline: none;
+}
+
+button.add:hover {
+  background-color: blue;
+  color: white;
+}
+
+.reset {
+  background-color: red;
+  color: white;
+  border: none;
+  outline: none;
+  width: 350px;
+  height: 100px;
+  font-family: 'Permanent Marker';
+  font-size: 50px;
+  margin: 50px 450px;
+}
