@@ -6,6 +6,7 @@ var todosCtrl = require('../controllers/todos');
 router.get('/', todosCtrl.index);
 router.post('/', todosCtrl.create);
 router.delete('/:id', todosCtrl.delete);
+router.delete('/', todosCtrl.reset);
 
 module.exports = router;
 

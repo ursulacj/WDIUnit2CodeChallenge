@@ -25,6 +25,7 @@ function deleteTodo(req, res) {
     res.redirect('/');
 }
 
-function reset() {
-    
+function reset(req, res) {
+    Todo.deleteMany(req.body);
+    res.redirect('/');
 }

@@ -1,5 +1,4 @@
-const todos = [
-    {}
+var todos = [
 ];
 
 module.exports = {
@@ -22,5 +21,6 @@ function deleteOne(id) {
 }
 
 function reset() {
-    
+    todos = [];
+    return todos;
 }
