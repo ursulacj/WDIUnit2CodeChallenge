@@ -3,7 +3,8 @@ var Todo = require('../data/todo');
 module.exports = {
     index,
     create,
-    delete: deleteTodo
+    delete: deleteTodo,
+    reset
 }
 
 function index(req, res) {
@@ -20,5 +21,10 @@ function create(req, res) {
 }
 
 function deleteTodo(req, res) {
+    Todo.deleteOne(req.params.id);
+    res.redirect('/');
+}
 
+function reset() {
+    
 }

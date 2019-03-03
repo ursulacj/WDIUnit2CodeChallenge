@@ -12,6 +12,10 @@ form.form {
   border: none;
 }
 
+li {
+  font-size: 22px;
+}
+
 .listWrapper {
   border-bottom: 2px solid gray;
 }
@@ -28,7 +32,7 @@ button.delete:hover {
 }
 
 .add {
-  margin-top: 30px;
+  margin-top: 25px;
   font-family: 'Permanent Marker', monospace;
   height: 36px;
 }

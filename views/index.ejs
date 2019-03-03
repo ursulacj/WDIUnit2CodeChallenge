@@ -13,26 +13,23 @@
       
       <!-- Display unordered list of all open todos -->
       <div class="listWrapper">
-        <% if(t.todo !== "") { %>
-          <ul>
-            <li> <%= t.todo %>
-              -
-              <%= t.done ? 'done' : 'not done' %>
-              <form action="" class="form">
+      <% if(t.todo !== "") { %>
+        <ul>
+          <li> <%= t.todo %>
+            -
+            <%= t.done ? 'done' : 'not done' %>
+            <form action="/<%= idx %>?_method=DELETE" id="delete-form" class="form" method="POST">
                 <button type="submit" class="delete"><i class="fas fa-trash-alt fa-2x"></i></button>
               </form>
             </li>
           </ul>
+        </div>
           <!-- Else if todos array is empty display a message that lets the user know -->
           <% } else { %>
             <h3>There are no To Dos yet!</h3>
           <% } %>
       <% }); %>
-      
-
-
       <br>
-    </div>
 
     <form action="/" method="POST" class="form">
       <input type="text" name="todo" class="add" required>
